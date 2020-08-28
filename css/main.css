@@ -1,0 +1,27 @@
+html {
+  background-color: snow;
+}
+
+#top-bar {
+  position: float;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(124, 124, 124);
+  height: 40px;
+}
+
+.top-items {
+  display: inline;
+  text-align: center;
+  margin-right: 15px;
+  padding: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75em;
+  color: white;
+  text-decoration: none;
+}
+
+.top-items:hover {
+  color: red;
+}
