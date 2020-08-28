@@ -1,0 +1,6 @@
+light-dark
+#ffffff
+#d0e1f9
+#4d648d
+#283655
+#1e1f26

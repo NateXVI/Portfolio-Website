@@ -2,26 +2,26 @@ html {
   background-color: snow;
 }
 
-#top-bar {
-  position: float;
+#navbar {
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  background-color: rgb(124, 124, 124);
-  height: 40px;
+  height: 2.5em;
+  background-color: #283655;
 }
 
-.top-items {
+#navbar a {
   display: inline;
   text-align: center;
   margin-right: 15px;
   padding: 10px;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.75em;
-  color: white;
+  color: #d0e1f9;
   text-decoration: none;
 }
 
-.top-items:hover {
-  color: red;
+#navbar a:hover {
+  color: white;
 }
