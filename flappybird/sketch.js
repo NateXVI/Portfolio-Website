@@ -26,9 +26,9 @@ function preload() {
   //variable that holds the picture for the bird
   birdPicture = loadImage("flappybird/assets/bird.png");
   //variable that holds the first font
-  flappyFont = loadFont("flappybird/assets/Pixeled.ttf");
+  flappyFont = loadFont("http://natediven.com/flappybird/assets/Pixeled.ttf");
   //variable that holds the second font
-  flappyFont2 = loadFont("flappybird/assets/flappy.ttf");
+  flappyFont2 = loadFont("http://natediven.com/flappybird/assets/flappy.TTF");
 }
 
 //function runs once at the start of the program
