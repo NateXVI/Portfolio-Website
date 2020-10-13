@@ -95,6 +95,7 @@ class Bird {
 
                     if (this.score > this.highScore) {
                         this.highScore = this.score;
+                        saveHighScore();
                         // console.log("hs: " + this.highScore);
                     }
                 }

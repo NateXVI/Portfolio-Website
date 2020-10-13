@@ -45,7 +45,7 @@ function setup() {
 
   //create the bird object
   bird = new Bird();
-
+  loadHighScore();
   //creates the pipe objects
   pipes.push(new Pipe(width + 100));
 
@@ -278,4 +278,15 @@ function drawEndScreen() {
   textAlign(CENTER);
   text("n TO PLAY AGAIN", width / 2, height / 2 + 100);
   pop();
+}
+
+function loadHighScore() {
+  let hs = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value)}), {}).high_score;
+  console.log(hs);
+  console.log(typeof hs)
+  if (typeof(parseInt(hs)) == "number") bird.highScore = hs;
+}
+
+function saveHighScore() {
+  document.cookie = "high_score=" + bird.highScore;
 }
