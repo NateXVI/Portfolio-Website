@@ -284,7 +284,7 @@ function loadHighScore() {
   let hs = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value)}), {}).high_score;
   console.log(hs);
   console.log(typeof hs)
-  if (typeof(parseInt(hs)) == "number") bird.highScore = hs;
+  if (hs != undefined) bird.highScore = hs;
 }
 
 function saveHighScore() {
